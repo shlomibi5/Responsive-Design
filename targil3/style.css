@@ -1,0 +1,46 @@
+body {
+	margin: 0;
+	background: black;
+}
+
+div {
+	margin: 0 auto;
+	width: 800px;
+	border: 5px groove red;
+	background: #ffffff;
+	text-align: center;
+	font-family: Tahoma;
+	font-size: 12px;
+}
+p {
+	margin: 10px 15px;
+		display: none;
+}
+
+img {
+	max-width: 800px;
+	display: none;
+}
+
+iframe{
+	display: block;
+}
+
+@media (min-width: 300px) and (orientation: portrait) {
+	img {
+		display: block;
+	}
+}
+
+@media screen and (max-device-aspect-ratio: 4/3)
+ {
+ p{
+		display: block;
+ }
+ 
+@media (-webkit-min-device-pixel-ratio: 1) , (min-resolution:90dpi) {
+iframe{
+		display: block;
+}
+
+}
