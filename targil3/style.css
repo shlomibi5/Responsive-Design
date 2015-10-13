@@ -22,11 +22,13 @@ img {
 	display: none;
 }
 
-iframe{
+#video{
 	display: block;
+			width: 700px;
+		margin: 0 auto;
 }
 
-@media (min-width: 300px) and (orientation: portrait) {
+@media screen and (min-width: 300px) and (orientation: portrait) {
 	img {
 		display: block;
 	}
@@ -39,8 +41,9 @@ iframe{
  }
  
 @media (-webkit-min-device-pixel-ratio: 1) , (min-resolution:90dpi) {
-iframe{
+#video{
 		display: block;
+
 }
 
 }
