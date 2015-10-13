@@ -1,4 +1,11 @@
 body {
+	 overflow: hidden;
+ -webkit-touch-callout: none;
+ -webkit-user-select: none;
+ -khtml-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
 	margin: 0;
 	background: black;
 }
@@ -13,6 +20,7 @@ div {
 	font-size: 12px;
 }
 p {
+	width:100%;
 	margin: 10px 15px;
 		display: none;
 }
@@ -34,9 +42,10 @@ img {
 	}
 }
 
-@media screen and (max-device-aspect-ratio: 4/3)
+@media screen and (min-device-aspect-ratio: 4/3)
  {
- p{
+ p,div{
+width:auto;
 		display: block;
  }
  
